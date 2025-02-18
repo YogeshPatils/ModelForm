@@ -11,3 +11,7 @@ def bookTicketView(request):
             fm.save()
             return HttpResponse('<h1 style="text-align:center;">Ticket Booked Sucessfully..!</h1>')
     return render(request, 'index.html',{'form':fm})
+
+def passengerView(request):
+    qs=BookTicketModel.objects.all()
+    return render(request, 'passenger.html',{'ps':qs})
