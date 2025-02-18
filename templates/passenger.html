@@ -17,6 +17,8 @@
             <th>To</th>
             <th>Date of Journey</th>
             <th>No of Tickets</th>
+            <th></th>
+            <!-- <th></th> -->
         </tr>
         {% for p in ps %}
         <tr>
@@ -27,9 +29,11 @@
             <td>{{p.To}}</td>
             <td>{{p.dateOfJou}}</td>
             <td>{{p.noOfTickets}}</td>
+            <td><a href="{% url 'update' p.id %}"><button class="yellow">Update</button></a></td>
         </tr>
         {% endfor %}
     </table>
+    <a href="{% url 'bookTicket' %}"><button class="blue">Book New Ticket</button></a>
     
 </body>
 </html>

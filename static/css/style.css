@@ -12,3 +12,20 @@ td,th{
     border-bottom:1px solid black ;
     padding: 1em;
 }
+.yellow{
+    background-color: yellow;
+}
+
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: steelblue;
+}
+
+button{
+    border: none;
+    padding:0.3em 1em ;
+    border-radius:0.2em ;
+
+}
